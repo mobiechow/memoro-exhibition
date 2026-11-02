@@ -1,0 +1,5 @@
+/* All values are visitor-selected scenarios, not a lifespan forecast. */
+(function(root){'use strict';
+function calculate(s){const years=Math.max(0,Math.min(s.life-s.their,s.ownLife-s.age));const rate=s.frequency*s.duration;let past=0,baseline=0,apartYears=years;const family=s.who==='parent'||s.who==='grand';if(family){const togetherPast=Math.min(s.age,s.milestone,s.their);past=togetherPast*365*s.home+Math.max(0,Math.min(s.age,s.their)-togetherPast)*rate;const togetherFuture=Math.min(years,Math.max(0,s.milestone-s.age));apartYears=years-togetherFuture;baseline=togetherFuture*365*s.home+apartYears*rate;}else{past=Math.max(0,s.age-s.milestone)*rate;baseline=years*rate;}const extraHours=s.extraHours||0;const adjustedRate=(s.frequency+s.extra*12)*(s.duration+extraHours);const capped=adjustedRate>365*24;const gain=apartYears*(Math.min(365*24,adjustedRate)-rate);const ahead=baseline+gain,total=past+ahead;return{past,ahead,baseline,gain,total,years,apartYears,capped,annualGain:apartYears?gain/apartYears:0,percent:total?past/total*100:null};}
+root.TimeModel={calculate};
+})(typeof window!=='undefined'?window:globalThis);

@@ -1,0 +1,8 @@
+@font-face{font-family:"Foam GenSen Rounded";src:url("assets/fonts/gensen-rounded-brand.woff2?v=20261102-cantonese-options") format("woff2");font-weight:700;font-style:normal;font-display:swap;}
+
+/* The exhibition's own rounded typeface, used where voice and hierarchy matter. */
+:root{--brand-font:"Foam GenSen Rounded","PingFang TC",sans-serif}
+h1,h2,h3,.eyebrow,.kicker,.entry h2,.primary,.primary-link,.secondary,.secondary-link,.nav,.floatie-question .option,.floatie-keywords,.floatie-kicker,.floatie-expo,.floatie-invitation,.all-types button,.site-footer,.foot,.step-counter,.back{font-family:var(--brand-font)!important;font-weight:700!important;font-synthesis:none}
+.floatie-question .option{font-size:17px!important;line-height:1.7!important}
+.floatie-question .question-title{line-height:1.5!important}
+.floatie-story .result-description,.story-scene,.intro-copy,.intro-bottom p{font-family:"PingFang TC",sans-serif;font-weight:400;line-height:1.85}

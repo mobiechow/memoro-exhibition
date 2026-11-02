@@ -1,0 +1,1 @@
+(() => {'use strict';const b=document.body;const reduce=matchMedia('(prefers-reduced-motion: reduce)');const ready=()=>b.dataset.appPhase='ready';if(reduce.matches){ready();return;}setTimeout(()=>b.dataset.appPhase='copy',1350);setTimeout(ready,2200);addEventListener('pageshow',e=>{if(e.persisted)ready();});})();
