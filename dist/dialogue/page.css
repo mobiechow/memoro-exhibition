@@ -3,3 +3,9 @@
 figcaption strong{display:block;font-size:16px;line-height:1.9;color:var(--ink);margin-bottom:10px}.primary-button:disabled{opacity:.55;cursor:not-allowed}
 
 .form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}#enquiry-result:focus{outline:none}
+
+/* Reuse the existing experience pages' home navigation treatment. */
+.info-header .cover-home-chip{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border:1px solid #d9cee2;border-radius:999px;background:#fffdf8b8;color:#79668f;font:700 14px/1.6 var(--brand-font);text-decoration:none;margin:0}.info-header .cover-home-chip:hover{background:#eee6f5}.dialogue-fan{display:block;width:min(100%,560px);height:auto;aspect-ratio:1452/1163;object-fit:contain;margin:28px auto 25px;border-radius:24px}.dialogue-intro:has(.dialogue-fan){padding-top:46px}.dialogue-intro:has(.dialogue-fan) h1{margin-bottom:0}@media(max-width:650px){.dialogue-fan{width:100%;margin:24px auto 22px;border-radius:18px}.dialogue-intro:has(.dialogue-fan){padding-top:32px}.info-header>span{font-size:11px}}
+
+/* Same exhibition footer markup and styling as time and quiz. */
+.exhibition-footer{max-width:760px;margin:12px auto 20px!important;padding:18px 20px 16px!important;display:flex;align-items:center;flex-direction:column;gap:10px;text-align:center;border-top:0}.exhibition-footer img{width:240px;max-width:70%;height:auto}.exhibition-footer p{font:11px/1.8 "PingFang TC",sans-serif;margin:0;color:#778174}.exhibition-visit-link{font:13px/1.7 var(--brand-font);color:#79668f;text-underline-offset:4px;margin:0;padding:3px 0}.exhibition-instagram-link{display:block;font:13px/1.6 var(--brand-font);color:#79668f;text-decoration:none;text-underline-offset:3px;padding:0;margin:0}.exhibition-instagram-link:hover{text-decoration:underline}@media(max-width:480px){.exhibition-footer p{font-size:10px}.exhibition-footer img{width:220px}}
