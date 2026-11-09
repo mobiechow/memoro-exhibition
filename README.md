@@ -25,3 +25,7 @@
 - `/privacy/`：查詢用途、傳家寶接收及跟進同意、接收信箱內電郵保存至2026年12月12日、查閱／更正／刪除聯絡方式、和悅會政策連結；舊 `/quiz/#privacy` 仍可閱讀摘要及前往完整版本。
 - 保存日期需要收件人及合作機構實際執行電郵清理；網站不會自動刪除電郵。
 - 訪客毋須開啟電郵程式。FormSubmit 會另保留提交紀錄30日，已於收集聲明及私隱頁披露。
+
+## Vercel production
+
+This release is based on GitHub main fa1bef9 with hosting-specific share URLs and privacy hosting text updated for https://memoroexhibition.vercel.app/. Deploy the dist/ static output to existing project memoro_exhibition.
