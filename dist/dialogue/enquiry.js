@@ -60,7 +60,7 @@
       '想了解的內容：', form.elements.message.value.trim() || '未有補充', '',
       '我已閱讀並同意網站私隱政策及個人資料收集聲明。',
       '我同意將上述姓名、聯絡方法及查詢內容提供予合作機構「傳家寶」，以聯絡我及跟進本次查詢。',
-      '本次查詢資料以電郵保存，保存期限至2026年12月12日；可電郵 mobiechow@gmail.com 要求查閱、更正或刪除。',
+      '本次查詢資料以電郵保存，保存期限至2026年12月12日；可電郵聯絡傳家寶要求查閱、更正或刪除。',
       `聲明版本：${consentVersion}`
     ].join('\n');
     body.textContent = text;
@@ -80,7 +80,7 @@
   });
   document.querySelector('#copy-enquiry').addEventListener('click', async () => {
     try {
-      await navigator.clipboard.writeText('收件人：mobiechow@gmail.com\n主旨：一屋三代放暑假｜項目查詢\n\n' + body.textContent);
+      await navigator.clipboard.writeText('主旨：一屋三代放暑假｜項目查詢\n\n' + body.textContent);
       status.textContent = '已複製。請貼到電郵，核對後寄出。';
     } catch {
       status.textContent = '未能自動複製，請選取上方內容，手動複製到電郵。';
