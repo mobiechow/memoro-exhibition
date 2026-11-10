@@ -29,3 +29,5 @@
 ## Vercel production
 
 This release is based on GitHub main fa1bef9 with hosting-specific share URLs and privacy hosting text updated for https://memoroexhibition.vercel.app/. Deploy the dist/ static output to existing project memoro_exhibition.
+
+2026-11-10：查詢及資料查閱／更正／刪除聯絡信箱改為 ask@4my.family。新收件信箱需為各網站來源完成 FormSubmit 啟用。

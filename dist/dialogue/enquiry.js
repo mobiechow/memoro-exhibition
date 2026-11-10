@@ -10,9 +10,9 @@
   const topicError = document.querySelector('#topic-error');
   const title = document.querySelector('#result-title');
   const message = document.querySelector('#result-message');
-  const consentVersion = '2026-11-09';
-  // Recipient activated by the owner on 2026-11-09.
-  const delivery = Object.freeze({ready: true, endpoint: 'https://formsubmit.co/ajax/mobiechow@gmail.com'});
+  const consentVersion = '2026-11-10';
+  // FormSubmit verifies the receiving mailbox for each website origin.
+  const delivery = Object.freeze({ready: true, endpoint: 'https://formsubmit.co/ajax/ask@4my.family'});
   let sending = false;
   submit.disabled = false;
   function clearErrors() {
