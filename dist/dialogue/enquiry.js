@@ -12,7 +12,7 @@
   const message = document.querySelector('#result-message');
   const consentVersion = '2026-11-10';
   // FormSubmit verifies the receiving mailbox for each website origin.
-  const delivery = Object.freeze({ready: true, endpoint: 'https://formsubmit.co/ajax/ask@4my.family'});
+  const delivery = Object.freeze({ready: true, endpoint: 'https://formsubmit.co/ajax/mobiechow@gmail.com'});
   let sending = false;
   submit.disabled = false;
   function clearErrors() {
